@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Generic server class based on ext/sockets, used to develop any kind of
 server.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Ogólna klasa serwerowa oparta na ext/sockets, s³u¿±ca do tworzenia
