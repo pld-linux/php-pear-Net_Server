@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - generic server class
 Summary(pl):	%{_pearname} - ogólna klasa serwerowa
 Name:		php-pear-%{_pearname}
-Version:	0.11.3
+Version:	0.11.5
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	1ea005cba31f427f46fb1088e4289e26
+# Source0-md5:	c5787b7e27f7ff8cb6c20023c683dd7d
 URL:		http://pear.php.net/package/Net_Server/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
