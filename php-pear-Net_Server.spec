@@ -1,10 +1,10 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Net
-%define         _subclass       Server
+%define		_class		Net
+%define		_subclass	Server
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Generic server class
+Summary:	%{_pearname} - generic server class
 Summary(pl):	%{_pearname} - ogólna klasa serwerowa
 Name:		php-pear-%{_pearname}
 Version:	0.11
