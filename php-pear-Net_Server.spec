@@ -3,15 +3,16 @@
 %define         _subclass       Server
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - Generic server class
 Summary(pl):	%{_pearname} - ogólna klasa serwerowa
 Name:		php-pear-%{_pearname}
-Version:	0.10
+Version:	0.11
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	b6f9de2431063c5ebb96918cbd1727d5
+# Source0-md5:	33a32f3eba8d51a5bac15f60e92bb7e2
 URL:		http://pear.php.net/package/Net_Server/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -35,11 +36,11 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Drivers
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Driver
 
 install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-install %{_pearname}-%{version}/%{_subclass}/Drivers/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Drivers
+install %{_pearname}-%{version}/%{_subclass}/Driver/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Driver
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -48,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc %{_pearname}-%{version}/{docs,examples}
 %dir %{php_pear_dir}/%{_class}/%{_subclass}
-%dir %{php_pear_dir}/%{_class}/%{_subclass}/Drivers
+%dir %{php_pear_dir}/%{_class}/%{_subclass}/Driver
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}/Drivers/*.php
+%{php_pear_dir}/%{_class}/%{_subclass}/Driver/*.php
