@@ -1,12 +1,10 @@
-# ToDo:
-# - pl summary/description (I dunno - how to translate 'generic', so that it
-#   wouldn't sound too awful?)
 %include	/usr/lib/rpm/macros.php
 %define         _class          Net
 %define         _subclass       Server
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - Generic server class
+Summary(pl):	%{_pearname} - ogólna klasa serwerowa
 Name:		php-pear-%{_pearname}
 Version:	0.9
 Release:	1
@@ -27,7 +25,8 @@ server.
 This class has in PEAR status: %{_status}.
 
 %description -l pl
-...
+Ogólna klasa serwerowa oparta na ext/sockets, s³u¿±ca do tworzenia
+serwerów dowolnego rodzaju.
 
 Ta klasa ma w PEAR status: %{_status}.
 
