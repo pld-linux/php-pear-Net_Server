@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Net
 %define		_subclass	Server
-%define		_status		alpha
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - generic server class
 Summary(pl):	%{_pearname} - ogólna klasa serwerowa
 Name:		php-pear-%{_pearname}
-Version:	0.12.0
-Release:	4
+Version:	1.0.0
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	f73b4f437ab48ae089db4e92d4d92709
+# Source0-md5:	d7e6c9291fc5b60127fa9f3b7667b741
 URL:		http://pear.php.net/package/Net_Server/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
