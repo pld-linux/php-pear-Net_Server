@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - generic server class
-Summary(pl):	%{_pearname} - ogólna klasa serwerowa
+Summary(pl.UTF-8):   %{_pearname} - ogÃ³lna klasa serwerowa
 Name:		php-pear-%{_pearname}
 Version:	1.0.2
 Release:	1
@@ -33,9 +33,9 @@ server.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ogólna klasa serwerowa oparta na ext/sockets, s³u¿±ca do tworzenia
-serwerów dowolnego rodzaju.
+%description -l pl.UTF-8
+OgÃ³lna klasa serwerowa oparta na ext/sockets, sÅ‚uÅ¼Ä…ca do tworzenia
+serwerÃ³w dowolnego rodzaju.
 
 Ta klasa ma w PEAR status: %{_status}.
 
