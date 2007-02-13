@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - generic server class
-Summary(pl.UTF-8):   %{_pearname} - ogólna klasa serwerowa
+Summary(pl.UTF-8):	%{_pearname} - ogólna klasa serwerowa
 Name:		php-pear-%{_pearname}
 Version:	1.0.2
 Release:	1
