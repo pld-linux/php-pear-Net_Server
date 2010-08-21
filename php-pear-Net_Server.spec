@@ -3,24 +3,25 @@
 %define		_subclass	Server
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - generic server class
 Summary(pl.UTF-8):	%{_pearname} - ogólna klasa serwerowa
 Name:		php-pear-%{_pearname}
 Version:	1.0.2
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	58b142118b862a9ec9b4e66f6ed88c40
 URL:		http://pear.php.net/package/Net_Server/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php(sockets)
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
 Requires:	php-pear-PEAR-core >= 1:1.4.0-0.b1
+Requires:	php-sockets
+Suggests:	php-pcntl
+Suggests:	php-pear-PHP_Fork
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
