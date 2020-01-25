@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	Net_Server
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - generic server class
 Summary(pl.UTF-8):	%{pearname} - ogólna klasa serwerowa
 Name:		php-pear-%{pearname}
